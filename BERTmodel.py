@@ -4,7 +4,7 @@ from transformers import BertModel
 
 class BertPriceRegressor(nn.Module):
     """
-    DeBERTa V3 encoder + small feed-forward head for regression (price prediction).
+    BERT encoder + small feed-forward head for regression (price prediction).
     """
     def __init__(self, bert_model_name='bert-base-uncased', dropout=0.2, hidden_dims=(512, 128)):
         super().__init__()
