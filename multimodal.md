@@ -55,9 +55,9 @@ This architecture:
 ### 3. Loss Function
 - MSELoss (Mean Squared Error) on log-transformed targets
 - Evaluation metrics:
-- - RMSE (Root Mean Square Error)
-- - MAE (Mean Absolute Error)
-- - SMAPE (Symmetric Mean Absolute Percentage Error)
+  - RMSE (Root Mean Square Error)
+  - MAE (Mean Absolute Error)
+  - SMAPE (Symmetric Mean Absolute Percentage Error)
 
 ---
 
@@ -88,7 +88,7 @@ This architecture:
 ### 🚀 Example CLI Run
 
 - ```bash
-- python train_multimodal.py
+  python train_multimodal.py
 
 ---
 ## 🔮 Inference Pipeline (`sample_code_multimodal.py`)
@@ -108,6 +108,6 @@ This architecture:
 - Run inference with default configuration (auto-selects best available model):
 
 - ```bash
-- python sample_code_multimodal.py
+  python sample_code_multimodal.py
 
 ---
