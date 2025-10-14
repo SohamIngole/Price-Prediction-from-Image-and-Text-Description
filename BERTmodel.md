@@ -1,8 +1,4 @@
-# 🧠 Amazon ML Challenge 2025 — NLP-Based Price Prediction
-
-**Team Name:** Code Walkers  
-**Team Members:** Sankalp Jain, Soham Ingole, Sparsh Goyal  
-**Submission Date:** 12/10/15, 22:21
+# 🧠 NLP-based Price Prediction using BERT (Bidirectional Encoder Representations from Transformers)
 
 ## 📘 Overview
 This project predicts the **target price** of products using only the textual feature **`catalog_content`**, which contains the item name, attributes, and size information.  
@@ -73,5 +69,27 @@ Pretrained **BERT** model (`bert-base-uncased`), optionally replaceable by small
 | Mixed precision (AMP) | ✅ Enabled |
 | Validation split | 10% |
 | Test split | 10% |
+
+---
+
+## 📊 Evaluation Metric — SMAPE
+
+The **Symmetric Mean Absolute Percentage Error (SMAPE)** is the official evaluation metric used for this project.
+
+### 📐 Formula
+
+\[
+\text{SMAPE} = \frac{100}{n} \sum_{i=1}^{n} \frac{|y_i - \hat{y}_i|}{(|y_i| + |\hat{y}_i|)/2}
+\]
+
+Where:
+- \( y_i \) = actual (true) price  
+- \( \hat{y}_i \) = predicted price  
+- \( n \) = number of samples
+
+### ✅ Interpretation
+- SMAPE ranges between **0% and 200%**
+- Lower values indicate better predictions
+- It is **symmetric**, treating overestimation and underestimation equally
 
 ---
